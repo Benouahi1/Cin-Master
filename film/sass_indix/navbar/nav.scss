@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    
+    margin: 0;
+}
+body{
+    padding-top: 50px;
+}
+.nav_container{
+    margin-left: 7%;
+    a{
+    font-size: 30px;
+    text-decoration: none;
+    color:#2C666E;
+    user-select: none;
+}
+}
+#navbar{
+    background-color:#F0EDEE ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    z-index: 999;
+    top: 0;
+    img{
+        margin:5px 0 0 8px;
+        width: 200px;
+    }
+    .nav_links{
+        display: flex;
+        list-style: none;
+        margin-top: 10px;
+        margin-right: 10%;
+        li{
+            margin-left: 7%;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #2C666E;
+            transition: 0.4s;
+            padding: 7px 14px;
+            font-size: 20px;
+            user-select: none;
+        }
+        a:hover{
+            font-size: 21px;
+            transform:none;
+            background-color: #2C666E;
+            border-radius: 30px;
+            color: #F0EDEE;
+        }
+    }
+}
+
+.menu {
+    margin: 10px;
+    cursor: pointer;
+    display:  none;
+
+div{
+    background-color: #2C666E;
+    width: 28px;
+    height: 5px;
+    margin:4px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+
+}}
+@media screen and  (max-width :900PX ){
+  a{
+      padding: 0 0 0;
+  }
+}
+@media screen and  (max-width :768PX ){
+
+    body{
+        max-width: 100vw;
+    
+    
+    .nav_links{
+        margin-right: 0% !important;
+        position: absolute;
+        right: 0px;
+        top: 6vh;
+        height: 88vh;
+        width: 65vw;
+        background-color: #F0EDEE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        li{
+            margin-top: 10%;
+        }
+        
+        // display: none;
+    }
+
+    
+    
+}
+.menu{
+    display: block;
+}
+
+}
+.nav-active{
+    transform: translateX(0%) !important; 
+    // .nav_links{
+    //     display: block;
+    // }              
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-6px,-9px);
+}
